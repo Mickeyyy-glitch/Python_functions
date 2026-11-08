@@ -1,7 +1,7 @@
 text = input()
 
 
-def is_valid(txt, i=0, exp=[]):
+def is_valid(txt: str, i=0, exp=[]) -> bool:
     if i == len(txt):
         return not exp
 

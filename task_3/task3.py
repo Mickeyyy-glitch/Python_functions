@@ -1,7 +1,11 @@
 import re
 
 
-text = input()
-pattern = r'(?=([A-ZА-Ё]{1,6}))'
+def find_abb(txt: str) -> list:
+    abbreviations = re.findall(r"\b[A-ZА-ЯЁ]{1,6}\b", text)
+    return abbreviations
 
-print(re.findall(pattern, text))
+
+text = input()
+
+print(find_abb(text))

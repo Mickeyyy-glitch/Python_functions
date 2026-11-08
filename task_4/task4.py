@@ -1,7 +1,8 @@
-def factorials(n):
+def factorials(n: int) -> int:
     res = 1
     for num in range(1, n + 1):
         res *= num
         yield res
 
-print(*[i for i in factorials(5)])
+
+print(*[elem for elem in factorials(5)])
